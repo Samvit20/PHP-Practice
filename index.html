@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validation</title>
+<script src="index.js"></script>
+</head>
+<body style="padding: 20px;">
+    <div style="border: black solid 1px; width: fit-content; padding: 10px;">
+        <h1>Validate Credit Cards</h1>
+        <form>
+            <label for="card">Credit Card: </label>
+            <select id="card" name="card">
+                <option value="American Express">American Express</option>
+                <option value="Diners Club">Diners Club</option>
+                <option value="Discover">Discover</option>
+                <option value="JCB">JCB</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="Visa">Visa</option>
+            </select><br>
+            <label for="number">Number: </label>
+            <input type="text" name="number" id="number"><br><br>
+            <button type="button" onclick="Validate();">Validate</button>
+        </form>
+        <p style="border: black solid 1px; display: none;" id="disp"></p>
+    </div>
+</body>
+</html>
